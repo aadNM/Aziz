@@ -250,6 +250,12 @@
 				<section id="" class="">
 					<div class="container">
 						<div class="row">
+							<div class="col-4 col-12-medium">
+								<header>
+									<h2>Projects</h2>
+									<!--<p>USA and Guinea</p>-->
+								</header>
+							</div>
 							<p>I worked on several projects and assignments alone and with a group of students. In this page, you can find video presentations and games you can play.</p>
 
 							<h3>Individual</h3>
@@ -351,7 +357,41 @@
 				</section>
 				<!-- Pays-Capital -->
 				<section id="two" class="spotlight style2 right">
-					<span class="image fit main"><img src="images/pic03.jpg" alt="" /></span>
+					<!--<span class="image fit main"><img src="images/pic03.jpg" alt="" /></span>-->
+					<section id="game-setup">
+						<div id="totalPlay-form">
+						Number of Players: <input type="number" name="totalPlayers" id="totalPlayers" min="0" max="8"><br>
+						<input type="submit" name="submit" onclick="setPlayers()">
+					  </div>
+					
+					  <div id="playerNames">
+					  </div>
+					
+					  <p id="start-btn"><input type="submit" name="submit" onclick="startGame()" value="Start Game"></p>
+					  </section>
+					
+					  <section id="top-container">
+						<div id="timer-screen">
+						  <p><span id="seconds">0</span> seconds <label style="visibility: hidden;" id="timesUP">Time's up</label></p>
+						  <button onclick="startTimer()">Start</button>
+						  <button onclick="reset()">Reset</button>
+						  <button onclick="pause()">Pause</button>
+						</div>
+					
+						<div id="getLetter">
+						  <button onclick="getLetter()">Get a Letter</button>
+						  <p><span id="letter"></span></p>
+						</div>
+					
+						<div id="score-board-pc">
+						  <div id="names">
+							<span id="title1"><strong>Players</strong></span>
+						  </div>
+						  <div id="points">
+							<span id="title2"><strong>Points</strong></span>
+						  </div>
+						</div>
+					  </section>
 					<div class="content">
 						<header>
 							<h2>Pays-Capital</h2>
@@ -466,102 +506,11 @@
 				</section>
 
 
-			<!-- Activities -->
+			<!-- Awards and Recognition -->
 			<section id="four" class="wrapper style1 special fade-up">
 				<div class="container">
 					<header class="major">
-						<h2>Activities</h2>
-						
-					</header>
-					
-					<table class="alt" style="text-align: left;">
-                        <tbody>
-                            <tr>
-                                <td><strong>KU International Student Association</strong><br>
-									- Vice President<br>
-									- Chair of Fundraising and Budgeting &emsp;  Feb 2022 – Current</td>
-								<td>Oct. 2021 – Current</td>
-							</tr>
-							<tr>
-                                <td><strong>KU Upsilon Pi Epsilon (UPE) Computing Honor Society, Member</strong></td>
-								<td>Oct. 2021 – Current</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Ecumenical Campus Ministries KU, Board Member </strong></td>
-								<td>Aug. 2021 – Current</td>
-							</tr>
-                                <td><strong>Kansas Suicide Prevention HQ, Volunteer Counselor </strong></td>
-								<td>Sept. 2020 – Dec. 2021</td>
-                            </tr>
-                            <tr>
-                                <td><strong>KU International Students Advisory committee, Member </strong></td>
-								<td>July 2020 – Current</td>
-							</tr>
-							<tr>
-                                <td><strong>Phi Theta Kappa Honor Society, Alumnus</strong></td>
-								<td>Mar. 2020 – Current</td>
-                            </tr>
-                            <tr>
-                                <td>Blueprints Student Leadership Conference, Attendee</td>
-								<td> Feb. 2020</td>
-							</tr>
-							<tr>
-                                <td><strong>KU Leadership Challenge for Business/Engineering, Student Attendee </strong></td>
-								<td>Jan. 2020</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Startup School 2020 at KU </strong></td>
-								<td>Jan. 2020 – Mar. 2020</td>
-							</tr>
-							<tr>
-                                <td><strong>Association for Computer Machinery, Member</strong></td>
-								<td>Aug. 2019 – Current</td>
-                            </tr>
-							<tr>
-								<td><strong>Global Partners, Director of Communication</strong><br>
-									-   Manage Social Media to increase outreach.
-									-   Update students on career opportunities.
-								</td>
-								<td>Aug. 2019 – May 2020</td>
-							</tr>
-							<tr>
-								<td><strong>Butler International Students Association, President</strong><br>
-										-   Structured, organized, and maintained the organization.<br>
-										-   Recruited members.<br>
-										-   Build partnerships with various organizations.<br>
-										-   Created and planned events.<br>
-								</td>
-								<td> Sept. 2017 - May 2019</td>
-							</tr>
-							<tr>
-								<td><strong>Butler Math lab, Volunteer Tutor</strong></td>
-								<td>Apr. 2019 – May 2019</td>
-							</tr>
-								<td><strong>Weekly Community Presentations at El Dorado High School with the Local Kiwanis Club International</strong> <br>
-									-   Introduced high school students to international cultures.</td>
-								<td>Mar. 2018</td>
-							<tr>
-								<td><strong>Phi Theta Kappa Honor Society, Member </strong></td>
-								<td>Jan. 2018 – May 2019</td>
-							</tr>
-							<tr>
-								<td><strong>Grizzlies Ambassadors,Member</strong><br>
-									-   Volunteered at campus events, American Red Cross blood drives, homeless shelters, nursing homes and high schools.
-								</td>
-								<td style="width:25%;">Sept. 2017 – May 2019</td>
-							</tr>
-                        </tbody>
-                        <tfoot>
-                            <tr>
-                               
-                            </tr style="width:25%;">
-                        </tfoot>
-                    </table>
-			</section>
-			<section id="four" class="wrapper style1 special fade-up">
-				<div class="container">
-					<header class="major">
-						<h2>Activities</h2>
+						<h2>Awards and Recognition</h2>
 						
 					</header>
 					<div class="col-6">
@@ -635,6 +584,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/game.js"></script>
 
 	</body>
 </html>

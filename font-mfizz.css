@@ -24,11 +24,19 @@
   font-style: normal;
 }
 
+i {
+  font-size: 2.5em;
+}
+
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: "FontMfizz";
     src: url("./font-mfizz.svg#font-mfizz") format("svg");
   }
+}
+
+i {
+
 }
 
 [data-icon]:before { content: attr(data-icon); }

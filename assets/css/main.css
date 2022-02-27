@@ -72,6 +72,16 @@ input, select, textarea {
 	appearance: none;
 }
 
+#two h4, #two h5 {
+    margin-bottom: 2px;
+}
+
+li > ul {
+    margin-bottom: -1%;
+    padding-bottom: 0;
+    padding-left: 4%;
+}
+
 /* Basic */
 
 	html {

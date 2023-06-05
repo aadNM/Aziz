@@ -143,13 +143,13 @@
 
 				var $this = $(this),
 					on, off;
-
+				let img_box = $this.find('.image.main > img');
 				on = function() {
 
 					var top, bottom, mode;
 
 					// Use main <img>'s src as this spotlight's background.
-						$this.css('background-image', 'url("' + $this.find('.image.main > img').attr('src') + '")');
+						// $this.css('background-image', 'url("' + img_box.attr('src') + '")');
 
 					// Side-specific scrollex tweaks.
 						if ($this.hasClass('top')) {
@@ -171,6 +171,9 @@
 							mode = 'middle';
 							top = 0;
 							bottom = 0;
+
+						}
+						if (img_box.hasClass('half')){
 
 						}
 

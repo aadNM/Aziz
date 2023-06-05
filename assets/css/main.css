@@ -2981,7 +2981,7 @@ li > ul {
 		background-position: center center;
 		background-size: cover;
 		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
-		height: 100vh;
+		height: 60vh;
 		overflow: hidden;
 		position: relative;
 	}
@@ -3146,6 +3146,27 @@ li > ul {
 		.spotlight.right .content {
 			border-left-width: 0.35em;
 			right: 0;
+		}
+
+		/*project presentation */
+		.spotlight .content.half {
+			border-width: 0;
+			width: 70%;
+			background: unset;
+			transform: unset;
+			transition: unset;
+			border: none;
+			padding: 1%;
+		}
+
+		.spotlight.left .content.half {
+			right: 0;
+			left: unset;
+		}
+
+		.spotlight.right .content.half {
+			left: 0;
+			right: unset;
 		}
 
 		.spotlight.style1 .content {
@@ -3523,10 +3544,10 @@ li > ul {
 			#banner .content .image {
 				border-radius: 100%;
 				display: inline-block;
-				height: 18em;
+				height: 33em;
 				margin-left: 3em;
 				vertical-align: middle;
-				width: 18em;
+				width: 25em;
 			}
 
 				#banner .content .image img {
